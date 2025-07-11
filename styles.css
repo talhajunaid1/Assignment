@@ -450,3 +450,31 @@ form textarea:focus {
 .footer-links li a:hover {
   color: #ffc107;
 }
+
+@media (max-width: 768px) {
+
+  .action-inner,
+  .contact-inner {
+    flex-direction: column;
+  }
+
+  .stat {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .signup-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .contact-left h2 {
+    font-size: 2rem;
+  }
+}
