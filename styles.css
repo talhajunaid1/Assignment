@@ -218,3 +218,77 @@ body {
   font-size: 1rem;
   color: var(--text-light);
 }
+
+.reviews {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: var(--fw-bold);
+}
+
+.review-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.stars img {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: var(--fw-bold);
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 10px;
+}
+
+.reviewer img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.name {
+  font-weight: var(--fw-semi);
+  font-size: 0.9rem;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
