@@ -116,3 +116,59 @@ body {
 .btn-focus:hover {
   background: var(--primary-hover);
 }
+
+.action {
+  padding: 90px 4%;
+  background: var(--bg-alt);
+}
+
+.action-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.action-text {
+  flex: 1 1 360px;
+}
+
+.action-text h2 {
+  font-size: 2.25rem;
+  font-weight: var(--fw-bold);
+  margin-bottom: 20px;
+}
+
+.action-text p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 32px;
+}
+
+.btn-launch {
+  background: var(--primary);
+  color: #fff;
+  font-weight: var(--fw-semi);
+  padding: 14px 38px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.25s;
+}
+
+.btn-launch:hover {
+  background: var(--primary-hover);
+}
+
+.action-img {
+  flex: 1 1 340px;
+  text-align: center;
+}
+
+.action-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
