@@ -1,0 +1,118 @@
+/* ========= Base Reset & Variables ========== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4F68FF;
+  --primary-hover: #3d50d1;
+  --text-dark: #1f2533;
+  --text-light: #6b7280;
+  --text-muted: #9ca3af;
+  --bg-main: #f7faff;
+  --bg-alt: #f8f9ff;
+  --bg-card: #ffffff;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  --radius: 8px;
+  --font-main: 'Inter', system-ui, sans-serif;
+  --fw-bold: 700;
+  --fw-semi: 600;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  background: var(--bg-main);
+  line-height: 1.6;
+}
+
+/* ========= Wrapper ========= */
+.bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========= Navbar ========= */
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-block: 30px;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+.signup-btn {
+  text-decoration: none;
+  font-weight: var(--fw-semi);
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 26px;
+  border-radius: var(--radius);
+  transition: background 0.25s;
+}
+
+.signup-btn:hover {
+  background: var(--primary-hover);
+}
+
+/* ========= Hero Banner ========= */
+.banner {
+  flex: 1;
+  background: url("./Assets/Hero-bg.png") repeat center/auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 4%;
+  padding-top: 120px;
+}
+
+.banner h1 {
+  font-size: clamp(2rem, 5vw + 0.5rem, 3.5rem);
+  line-height: 1.25;
+  font-weight: var(--fw-bold);
+  margin-bottom: 36px;
+  color: var(--text-dark);
+}
+
+.highlight {
+  color: var(--text-dark);
+}
+
+.btn-focus {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  font-weight: var(--fw-semi);
+  padding: 14px 40px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.25s;
+}
+
+.btn-focus:hover {
+  background: var(--primary-hover);
+}
