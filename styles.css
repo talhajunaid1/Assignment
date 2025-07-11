@@ -340,3 +340,72 @@ body {
   border-radius: 20px;
   box-shadow: var(--shadow);
 }
+
+.contact {
+  padding: 90px 4%;
+  background: #fdfdfd;
+}
+
+.contact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-left {
+  flex: 1 1 350px;
+}
+
+.contact-left h2 {
+  font-size: 3rem;
+  font-weight: var(--fw-bold);
+  margin-bottom: 12px;
+}
+
+.contact-right {
+  flex: 1 1 450px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 12px 0 6px;
+  font-weight: var(--fw-semi);
+  color: var(--text-dark);
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--primary);
+}
+
+.btn-contact {
+  margin-top: 20px;
+  padding: 14px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: var(--fw-semi);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-contact:hover {
+  background: var(--primary-hover);
+}
